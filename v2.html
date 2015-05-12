@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Prototype v2</title>
+		<meta content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" name="viewport" />
+			
+		<!-- Fonts -->
+		<link href="fonts/Avenir/avenir.css" rel="stylesheet" type="text/css">
+		
+		<!-- Stylesheets -->
+		<link href="js/fullPage/jquery.fullPage.css" rel="stylesheet" type="text/css">
+		<link href="css/css.css" rel="stylesheet" type="text/css">
+		
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<script src="js/anystretch.js"></script>
+		<script src="js/fullPage/jquery.fullPage.js"></script>
+		<script src="js/custom.js"></script>
+	</head>
+	<body class="book">
+		<header class="white-bg none">
+			<div class="table">
+				<div class="table-cell">
+					<img id="logo" src="images/logo.png" height="40" />
+				</div>
+				<div class="table-cell right">
+					<!-- <img class="menu-icon float-right" src="images/menu.png" /> 
+					<button type="button" class="button rounded green-bg white uppercase no-border no-margins loose float-right">Download</button>
+					-->
+					<a href="https://itunes.apple.com/app/clinkle/id458523629" target="_blank"><img src="images/applestore.png" height="40" /></a> &nbsp;
+					<a href="https://play.google.com/store/apps/details?id=com.clinkle" target="_blank"><img src="images/googleplaystore.png" height="40" /></a>
+				</div>
+			</div><!-- Table -->
+		</header>
+		
+		<div id="iphone">
+			<div class="inner-page">
+				<div class="table">
+					<div class="table-cell">
+						<div id="video-container">
+							<div id="mask">
+								<video muted loop id="tutorial" class="none">
+									<source src="videos/tutorial.mov">
+								</video>
+								<video muted loop id="treat-comp" class="none">
+									<source src="videos/Treat_Composition.mp4">
+								</video>
+								<video muted loop id="news-feed" class="none">
+									<source src="videos/news.mov">
+								</video>
+								<video muted loop id="open-treat-vid" class="none">
+									<source src="videos/open-treats--treat-unlock.mp4" type="video/mp4">
+								</video>
+								<video autoplay loop muted id="alerts" class="none">
+									<source src="videos/alert.mov">
+								</video>	
+							</div><!-- Mask -->
+						</div><!-- Video Container -->
+						<img class="none" src="images/iphone_2.png" />
+					</div>
+				</div><!-- Table -->
+			</div><!-- Inner Page -->
+		</div><!-- iPhone -->
+		
+		<div id="fullpage">
+			<section id="hero" class="section">
+				<div class="inner-page center">
+					<img src="images/logo_face.png" width="120" />
+					<div class="small-padding"></div>
+					<h1 class="light white">Treat yourself</h1>
+					<h3 class="white">Treat your friends</h3>
+					<div class="small-padding"></div>
+					<button id="video" type="button" class="button big-button rounded green-bg no-border white bold uppercase no-margins loose">Watch the Video</button>
+					<!-- <button type="button" class="button big-button rounded white semi-transparent-bg white-border uppercase no-margins loose hover-white-bg hover-green all-transition">Download</button> -->
+				</div><!-- Inner Page -->
+				<video autoplay loop muted id="commercial" class="bgvid">
+					<source src="videos/Commercial-5+6 Swipes.mp4" type="video/mp4">
+				</video>
+			</section> 
+			
+			<section class="section">
+				<div class="inner-page">
+					<div class="col one-half last-row">
+						<img class="icon" src="images/icon_treats.png" />
+						<h2 class="light white">Treats gets you the things you buy most on the house courtesy of your friends</h2>
+					</div>
+				</div><!-- Inner Page -->
+				<video autoplay loop muted id="winning-treat" class="bgvid">
+					<source src="videos/Commercial-TreatUnlock.mp4" type="video/mp4">
+				</video>
+			</section>
+			
+			<section class="section">
+				<div class="inner-page">
+					<h2 class="light dark-grey no-margins center">Getting started has never been easier</h2>
+					<div class="padding"></div>
+					<div class="col one-third center">
+						<img src="images/gif_download.gif" />
+						<h4>Download</h4>
+						<p class="grey">It's available in the <a href="https://itunes.apple.com/app/clinkle/id458523629" target="_blank" class="green">iOS App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.clinkle" target="_blank" class="green">Google Play Store</a></p>
+					</div>
+					<div class="col one-third center">
+						<img src="images/gif_signup.gif" />
+						<h4>Sign Up</h4>
+						<p class="grey">We'll send you your custom Treats Visa Prepaid Card.</p>
+					</div>
+					<div class="col one-third last center">
+						<img src="images/gif_addmoney.gif" />
+						<h4>Add Money</h4>
+						<p class="grey">Link your bank account to your Treats Card and you're all set</p>
+					</div>
+				</div><!-- Inner Page -->
+			</section>
+			
+			<section class="fill-meter section green-bg">
+				<div class="inner-page">
+					<div class="table">
+						<div class="table-cell table-col">
+							<img class="iphone block" src="images/iphone_2.png" />						
+						</div>
+						<div class="table-cell spacer"></div>
+						<div class="table-cell table-col">
+							<img class="icon" src="images/icon_treats.png" />
+							<h2 class="light white">The more you swipe, the more you create what we call "Treats"</h2>
+						</div><!-- Text -->
+					</div><!-- Table -->
+				</div><!-- Inner Page -->
+			</section>
+			
+			<section class="send-treat section stretchMe" data-stretch="images/using-device.jpg">
+				<div class="inner-page">
+					<div class="table">
+						<div class="table-cell table-col"></div>
+						<div class="table-cell spacer"></div>
+						<div class="table-cell table-col">
+							<img class="icon" src="images/icon_treats.png" />
+							<h2 class="light white">You can send Treats to your friends, which have a chance to pay for their purchase</h2>
+						</div><!-- Text -->
+					</div><!-- Table -->
+				</div><!-- Inner Page -->
+			</section>
+			
+			<section class="open-treat section light-grey-bg stretchMe" data-stretch="images/sammich.jpg">
+				<div class="inner-page">
+				  <div class="table">
+						<div class="table-cell table-col center"></div>
+						<div class="table-cell spacer"></div>
+						<div class="table-cell table-col">
+							<img class="icon" src="images/icon_treats.png" />
+							<h2 class="light white">The next time they swipe, they could get a nice surprise</h2>
+						</div><!-- Text -->
+					</div><!-- Table -->
+				</div><!-- Inner Page -->
+			</section>
+			
+			<section class="news-feed section stretchMe" data-stretch="images/blurry-city.jpg">
+				<div class="inner-page">
+				  <div class="table">
+						<div class="table-cell table-col">
+														
+						</div>
+						<div class="table-cell spacer"></div>
+						<div class="table-cell table-col">
+							<img class="icon" src="images/icon_feed.png" />
+							<h2 class="light white">Your news feed lets you see unopened treatd and boost their chances of winning</h2>
+						</div><!-- Text -->
+					</div><!-- Table -->
+				</div><!-- Inner Page -->
+			</section>
+			
+			<section class="alerts section green-bg stretchMe" data-stretch="images/blurry-city.jpg">
+				<div class="inner-page">
+					<div class="table">
+						<div class="table-cell table-col">
+							<img class="iphone none" src="images/iphone_2.png" />							
+						</div>
+						<div class="table-cell spacer"></div>
+						<div class="table-cell table-col">
+							<img class="icon" src="images/icon_alert.png" />
+							<h2 class="light white">Get instant alerts</h2>
+							<p class="white">Keep your stash on lockdown: we send simple alerts right to your phone. See how much money you've got left at a glance.</p>
+						</div><!-- Text -->
+					</div><!-- Table -->
+				</div><!-- Inner Page -->
+			</section>
+			
+			<section class="section green-bg">
+				<div class="inner-page">
+					<div class="table">
+						<div class="table-cell table-col">
+							<video autoplay loop muted id="history">
+								<source src="videos/other-features--history.mp4" type="video/mp4">
+							</video>			
+						</div>
+						<div class="table-cell spacer"></div>
+						<div class="table-cell table-col">
+							<img class="icon" src="images/icon_money.png" />
+							<h2 class="light white">Easily track your spending</h2>
+							<p class="white">Let your phone worry about budgeting. Your app keeps track of every card swipe and payment to a friend, so it's easy to search for your last IOU.</p>
+						</div><!-- Text -->
+					</div><!-- Table -->
+				</div><!-- Inner Page -->
+			</section>
+			
+			<section class="section white-bg">
+				<div class="inner-page">
+					<div class="one-half center auto">
+						<h3 class="light dark-grey">Secure &amp; FDIC-insured</h3>
+						<p class="grey">We keep your money safe behind 128-bit AES encryption, just like national banks. Lock your app with your secure PIN, so only you can open it.</p>
+						<p class="grey">But we don't stop there. <span class="green">Your card account is insured up to $250,000</span> through the FDIC, and you can shop worry free at millions of merchants worldwide with the <span class="green">Visa Zero Liability Guarantee</span>. That's real peace of mind.</p>
+					</div><!-- First Col -->
+					<div class="padding-top center">
+						<video autoplay loop muted id="pin">
+							<source src="videos/security--pin.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div><!-- Inner Page -->
+			</section>
+			
+			<section class="section green-bg">
+				<div class="inner-page center">
+					<img src="images/logo_face.png" width="120" />
+					
+					<div class="small-padding"></div>
+					<h1 class="light white no-margins">Ready to treat it forward?</h1>
+					<div class="small-padding"></div>
+					
+					<a href="https://itunes.apple.com/app/clinkle/id458523629" target="_blank"><img src="images/applestore.png" height="52" /></a> &nbsp;
+					<a href="https://play.google.com/store/apps/details?id=com.clinkle" target="_blank"><img src="images/googleplaystore.png" height="52" /></a>
+				</div><!-- Inner Page -->
+			</section>
+		</div><!-- full page -->
+		
+		<footer class="padding-top padding-bottom dark-grey-bg">
+			<div class="table">
+				<div class="table-cell">
+					<p class="light grey">Menu here</p>
+				</div>
+				<div class="table-cell right">
+					<p class="light grey">Icons here</p>
+				</div>
+			</div><!-- Table -->
+		</footer>
+	</body>
+</html>

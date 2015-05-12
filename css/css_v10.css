@@ -1,0 +1,589 @@
+/* General
+------------------------------------------------------- */
+* { outline: none; }
+html,body {
+	margin:0;
+	padding:0;
+	font-size: 100%;
+}
+body {
+	font-size: 15px;
+	line-height:1em;
+	font-weight: 400;
+}
+.inner-page { 
+	max-width: 1400px;
+	width: 80%;
+	position: relative;
+	display: block;
+	margin: auto;
+}
+.inner-inner-page { 
+	max-width: 900px;
+	width: 80%;
+	position: relative;
+	display: block;
+	margin: auto;
+}
+section {
+	position: relative;
+	clear: both;
+}
+
+.fixed { position:fixed!important; }
+.none { display: none; }
+.block { display: block; }
+
+
+
+/* Header
+------------------------------------------------------- */
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
+}
+header .table-cell {
+	padding: 1em 2em;
+}
+#logo {
+	height: 2em;
+}
+#logo-mobile {
+	height: 2em;
+	display:none;
+}
+.download-button {
+	height: 2.667em;
+}
+
+
+
+/* Elements
+------------------------------------------------------- */
+h1,h2,h3,h4 {
+	margin: 0;
+	font-weight: normal;
+}
+h1 {
+	font-size:4em;
+	line-height: 1em;
+}
+h2 {
+	font-size: 2.5em;
+	line-height: 1.35em;
+	margin-top: 1em;
+}
+h3 {
+	font-size: 2em;
+	line-height: 1em;
+}
+h4 {
+	font-size: 1.5em;
+	line-height: 1em;
+	margin-top: 1em;
+}
+
+.button {
+	padding: 1em 2em;
+	margin: 0.5em;
+	cursor: pointer;
+}
+.big-button  {
+	font-size: 1.15em;
+}
+
+a { text-decoration: none; }
+
+p {
+	font-size: 1.15em;
+	line-height:1.5em;
+}
+
+.logo-face {
+	width: 8em;
+}
+.icon {
+	width: 6.66em;
+	height: 6.66em;
+}
+
+.table-col {
+	width:47.5%;
+}
+.spacer { width: 5%; }
+
+
+
+/* iPhone
+------------------------------------------------------- */
+#iphone {
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+}
+#iphone img {
+	position: relative;
+	left: 0;
+	z-index: 5;
+	width:100%;
+}
+#iphone #video-container {
+	position: absolute;
+	z-index:1000;
+	top: 0;
+}
+#video-container #mask {
+	width: 88.5%;
+	height: 77.6%;
+	padding: 0;
+	margin: 22.4% 0 0 5.9%;
+	border-radius: 1%;
+	overflow: hidden;
+}
+#mask video {
+	width: 100%;
+	border-radius: 1%;
+}
+img.iphone {
+	position: relative;
+	z-index:5;
+	width: 60%!important;
+	height: auto!important;
+}
+#iphone .card {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height:auto;
+	z-index: 1;
+}
+
+
+
+/* Fullpage Sections
+------------------------------------------------------- */
+#fullpage {z-index:100;}
+#fullpage .section, #fullpage .slide {
+	background-size: cover!important;
+	transition: background 0.5s ease-in-out 0s;
+	-moz-transition: background 0.5s ease-in-out 0s;
+	-webkit-transition: background 0.5s ease-in-out 0s;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+	border: 1px solid #fff;
+}
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span { background:#fff; }
+
+.fp-section.fp-table, .fp-slide.fp-table { overflow:hidden; }
+
+	
+	/* Section 1: Intro
+	--------------------------------------------------- */
+	.bgvid {
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		
+		background: url(../images/photo_02.jpg) no-repeat;
+		background-size: cover;
+
+		z-index: -1;
+	}
+	.arrow {
+		position: absolute;
+		bottom: 2.5%;
+		font-size: 4em;
+		color: white;
+		left: 50%;
+		width: 1em;
+		text-align: center;
+		margin-left: -0.5em;
+		cursor: pointer;
+		-webkit-animation: arrow-bob 1s infinite alternate ease-in-out;
+		animation: arrow-bob 1s infinite alternate ease-in-out;
+	}
+	@-webkit-keyframes arrow-bob {
+	  from {
+		-webkit-transform: translateY(-5%);
+				transform: translateY(-5%);
+	  }
+	  to {
+		-webkit-transform: translateY(5%);
+				transform: translateY(5%);
+	  }
+	}
+	@keyframes arrow-bob {
+	  from {
+		-webkit-transform: translateY(-5%);
+				transform: translateY(-5%);
+	  }
+	  to {
+		-webkit-transform: translateY(5%);
+				transform: translateY(5%);
+	  }
+	}
+	#full-commercial {
+		z-index: 1000;
+		background: rgba(0,0,0,0.75);
+	}
+	#full-commercial .table-cell { display: table-cell!important; }
+	#full-commercial video {
+		width: 80%;
+		margin: 0 10%;
+	}
+	#close-video {
+		position: absolute;
+		top: 2.5%;
+		right: 2.5%;
+		font-size: 2em;
+		color: white;
+		width: 1em;
+		cursor: pointer;
+	}
+	
+	
+	/* Section 2: Sign Up
+	--------------------------------------------------- */
+	
+	
+	/* Section 3: Use Card
+	--------------------------------------------------- */
+	.card-reader {
+		position: absolute;
+		top:50%;
+		left:0;
+		margin-top: -146px;
+		z-index:10;
+	}
+	.shine {
+		position:absolute;
+		height: 100%;
+		width: 100%;
+		top:0;
+		left:0;
+		opacity:0;
+		z-index:10;	
+		border-radius: 5%;
+		background:url(../images/shine.png) 50% 300% no-repeat;
+	}
+	
+	/* Section 4: Send Treats
+	--------------------------------------------------- */
+	
+	
+	/* Section 5: Open Treat
+	--------------------------------------------------- */
+	
+	
+	/* Section 6: News Feed
+	--------------------------------------------------- */
+	#news-vid {
+		width: 70%;
+		margin:0 15%;
+	}
+	
+	
+	/* Section 7: Send Money
+	--------------------------------------------------- */
+	#send-money-vid {
+		width: 85%;
+		margin:0 7.5%;
+		border-radius: 9%;
+		position:relative;
+	}
+	
+	
+	/* Section 8: Purchase History
+	--------------------------------------------------- */
+	#history {
+		width: 100%;
+	}
+
+
+	/* Section 9: Fees
+	--------------------------------------------------- */
+	
+	
+	/* Section 10: Download
+	--------------------------------------------------- */
+	#security {
+		position: absolute;
+		bottom: 3%;
+		z-index: 1000;
+		left: 50%;
+		margin-left: -132px;
+	}
+	
+
+
+/* Footer
+------------------------------------------------------- */
+footer .table-cell {
+	padding: 0 30px;
+}
+
+
+/* Styles
+------------------------------------------------------- */
+
+	/* Text Styling
+	--------------------------------------------------- */	
+	.uppercase{ text-transform: uppercase; }
+	.left{ text-align: left; }
+	.center{ text-align: center; }
+	.right{ text-align: right; }
+	.justify{ text-align: justify; }
+	
+	.light { font-family: "Avenir-Light"; }
+	.book { font-family: "Avenir-Book";}
+	.roman { font-family: "Avenir-Roman"; }
+	.medium { font-family: "Avenir-Medium"; }
+	.heavy { font-family: "Avenir-Heavy"; }
+	.black { font-family: "Avenir-Black"; }
+	
+	.loose { letter-spacing: 0.1em; }
+	.airy { letter-spacing:0.3em; }
+	
+	.light-spacing { line-height: 1.5em; }
+	.double-spacing { line-height: 2em; }
+	
+	p:last-child {padding: 0;}
+	
+	.float-right {float:right;}
+	
+	.shadow {text-shadow: 0 0 30px #333;}
+	
+	
+	/* Tables
+	--------------------------------------------------- */
+	.table { 
+		width: 100%;
+		display: table;
+	}
+	.table-fixed { table-layout: fixed; }
+	.table-row { display: table-row; }
+	.table-cell{ 
+		display: table-cell;
+		vertical-align: middle;
+		position: relative;
+	}
+	.vert-top { vertical-align: top; }
+	.vert-bottom { vertical-align: bottom; }
+	
+	
+	/* Padding
+	--------------------------------------------------- */
+	.large-padding { padding: 9em; }
+	.large-padding-top { padding-top: 9em; }
+	.large-padding-bottom { padding-bottom: 9em; }
+	.large-padding-left { padding-left: 9em; }
+	.large-padding-right { padding-right: 9em; }
+	
+	.medium-padding { padding: 6em; }
+	.medium-padding-top { padding-top: 6em; }
+	.medium-padding-bottom { padding-bottom: 6em; }
+	.medium-padding-left { padding-left: 6em; }
+	.medium-padding-right { padding-right: 6em; }
+	
+	.padding { padding: 3em; }
+	.padding-top { padding-top: 3em; }
+	.padding-bottom { padding-bottom: 3em; }
+	.padding-left { padding-left:3em; }
+	.padding-right { padding-right: 3em; }
+	
+	.small-padding { padding: 1em; }
+	.small-padding-top { padding-top: 1em; }
+	.small-padding-bottom { padding-bottom: 1em; }
+	.small-padding-left { padding-left: 1em; }
+	.small-padding-right { padding-right: 1em; }
+	
+	/* Margins
+	--------------------------------------------------- */
+	.no-margins { margin: 0; }
+	.no-margin-top { margin-top: 0; }
+	.no-margin-bottom { margin-bottom: 0; }
+	.no-margin-left { margin-left: 0; }
+	.no-margin-right { margin-right: 0; }
+	.auto {margin:auto;}
+
+	/* Colors
+	--------------------------------------------------- */
+	.white,
+	.hover-white:hover { color: #fff; }
+	.white-bg,
+	.hover-white-bg:hover { background: #fff; }
+	.white-border,
+	.hover-white-border:hover { border: 2px solid #fff; }
+	
+	.green,
+	.hover-green:hover { color: #1bb252; }
+	.green-bg,
+	.hover-green-bg:hover { background: #1bb252; }
+	.green-border,
+	.hover-green-border:hover { border: 2px solid #1bb252; }
+	
+	.blue,
+	.hover-blue:hover { color: #0096b0; }
+	.blue-bg,
+	.hover-blue-bg:hover { background: #0096b0; }
+	.blue-border,
+	.hover-blue-border:hover { border: 2px solid #0096b0; }
+	
+	.light-blue,
+	.hover-light-blue:hover { color: #cce4eb; }
+	.light-blue-bg,
+	.hover-light-blue-bg:hover { background: #cce4eb; }
+	.light-blue-border,
+	.hover-light-blue-border:hover { border: 2px solid #cce4eb; }
+	
+	.blue-grey,
+	.hover-blue-grey:hover { color: #595f6b; }
+	.blue-grey-bg,
+	.hover-blue-grey-bg:hover { background: #595f6b; }
+	.blue-grey-border,
+	.hover-blue-grey-border:hover { border: 2px solid #595f6b; }
+	
+	.dark-grey,
+	.hover-dark-grey:hover { color: #393f40; }
+	.dark-grey-bg,
+	.hover-dark-grey-bg:hover { background: #393f40; }
+	.dark-grey-border,
+	.hover-dark-grey-border:hover { border: 2px solid #393f40; }
+	
+	.med-grey,
+	.hover-med-grey:hover { color: #484848; }
+	.med-grey-bg,
+	.hover-med-grey-bg:hover { background: #484848; }
+	.med-grey-border,
+	.hover-med-grey-border:hover { border: 2px solid #484848; }
+	
+	.grey,
+	.hover-grey:hover { color: #737e80; }
+	.grey-bg,
+	.hover-grey-bg:hover { background: #737e80; }
+	.grey-border,
+	.hover-grey-border:hover { border: 2px solid #737e80; }
+	
+	.light-grey,
+	.hover-light-grey:hover { color: #b9bebf; }
+	.light-grey-bg,
+	.hover-light-grey-bg:hover { background: #b9bebf; }
+	.light-grey-border,
+	.hover-light-grey-border:hover { border: 2px solid #b9bebf; }
+	
+	.faint-grey,
+	.hover-faint-grey:hover { color: #eaecec; }
+	.faint-grey-bg,
+	.hover-faint-grey-bg:hover { background: #eaecec; }
+	.faint-grey-border,
+	.hover-faint-grey-border:hover { border: 2px solid #eaecec; }
+	
+	.semi-transparent,
+	.hover-semi-transparent:hover { color: rgba(255,255,255,0.35); }
+	.semi-transparent-bg,
+	.hover-semi-transparent-bg:hover { background: rgba(255,255,255,0.35); }
+	
+	.no-border { border: none; }
+	
+	
+	/* Animation
+	--------------------------------------------------- */
+	.color-transition {
+		transition: color 0.25s ease-in-out 0s;
+		-moz-transition: color 0.25s ease-in-out 0s;
+		-webkit-transition: color 0.25s ease-in-out 0s;
+		cursor: pointer;
+	}
+	.background-transition {
+		transition: background 0.25s ease-in-out 0s;
+		-moz-transition: background 0.25s ease-in-out 0s;
+		-webkit-transition: background 0.25s ease-in-out 0s;
+		cursor: pointer;
+	}
+	.border-transition {
+		transition: border 0.25s ease-in-out 0s;
+		-moz-transition: border 0.25s ease-in-out 0s;
+		-webkit-transition: border 0.25s ease-in-out 0s;
+		cursor: pointer;
+	}
+	.opacity-transition {
+		transition: opacity 0.3s ease-in-out 0s;
+		-moz-transition: opacity 0.3s ease-in-out 0s;
+		-webkit-transition: opacity 0.3s ease-in-out 0s;
+		cursor: pointer;
+	}
+	.all-transition {
+		transition: all 0.3s ease-in-out 0s;
+		-moz-transition: all 0.3s ease-in-out 0s;
+		-webkit-transition: all 0.3s ease-in-out 0s;
+		cursor: pointer;
+	}
+	
+	.fade-in-hover { opacity: 0.5; }
+	.fade-in-hover:hover { opacity: 1; }
+	
+	/* Properties
+	--------------------------------------------------- */
+	.rounded { border-radius: 4px; }
+	
+	.border-box {
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;		
+	}
+	
+/* Mobile
+------------------------------------------------------- */
+@media only screen 
+and ( max-width: 1200px ) {
+	.card-reader { display:none; }
+	
+	.fp-viewing-2 #iphone .card {
+		opacity:0!important;
+	}
+	
+	body { font-size: 13px;	}
+}
+@media only screen 
+and ( max-width: 720px ) {
+	#iphone,
+	.iphone,
+	#treat-comp,
+	#open-treat-vid,
+	#news-vid,
+	#send-money-vid,
+	#history,
+	.card {
+		display:none!important;
+	}
+	
+	#fullpage .table-cell {
+		display:block;
+		width: 100%;
+	}
+}
+@media only screen 
+and ( max-width: 510px ) {
+	#logo { display:none; }
+	#logo-mobile { display:block; }
+}
+@media only screen 
+and ( max-width: 400px ) {
+	body { font-size: 11px; }
+	
+	.download h1 {font-size: 3em;}
+	.download a img {
+		height: 32px;
+	}
+}
+@media only screen 
+and ( max-width: 320px ) {
+	body { font-size: 10px; }
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Prototype v6</title>
+		<meta content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" name="viewport" />
+			
+		<!-- Fonts -->
+		<link href="https://fontastic.s3.amazonaws.com/U8pN4JMpbScNbcYMUPmx3Q/icons.css" rel="stylesheet">
+		<link href="fonts/Avenir/avenir.css" rel="stylesheet" type="text/css">
+		
+		<!-- Stylesheets -->
+		<link href="js/fullPage/jquery.fullPage.css" rel="stylesheet" type="text/css">
+		<link href="css/css.css" rel="stylesheet" type="text/css">
+		
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<script src="js/jQueryRotate.js"></script>
+		<script src="js/fullPage/jquery.fullPage.js"></script>
+		<script src="js/custom_v6.js"></script>
+	</head>
+	<body class="book">
+		<header class="white-bg none">
+			<div class="table">
+				<div class="table-cell">
+					<img id="logo" src="images/logo.png" height="40" />
+				</div>
+				<div class="table-cell right">
+					<!-- <img class="menu-icon float-right" src="images/menu.png" /> 
+					<button type="button" class="button rounded green-bg white uppercase no-border no-margins loose float-right">Download</button>
+					-->
+					<a href="https://itunes.apple.com/app/clinkle/id458523629" target="_blank"><img src="images/applestore.png" height="40" /></a> &nbsp;
+					<a href="https://play.google.com/store/apps/details?id=com.clinkle" target="_blank"><img src="images/googleplaystore.png" height="40" /></a>
+				</div>
+			</div><!-- Table -->
+		</header>
+		
+		<div id="iphone">
+			<div class="table">
+				<div class="table-cell">
+					<div id="video-container">
+						<div id="mask">
+							<video muted loop id="pay-in-style" class="none">
+								<source src="video/mailcard.mov">
+							</video>
+							<video muted id="alert" class="none">
+								<source src="video/alert_2.mov">
+							</video>
+							<video muted loop id="treat-comp" class="none">
+								<source src="video/Treat_Composition.mov">
+							</video>
+							<video muted loop id="open-treat-vid" class="none">
+								<source src="video/Open_Treat.mov">
+							</video>
+						</div><!-- Mask -->
+					</div><!-- Video Container -->
+					<img class="none iphone-img" src="images/iphone_2.png" />
+				</div>
+				<img class="none card" src="images/cardFront_vert.png" />	
+			</div><!-- Table -->
+		</div><!-- iPhone -->
+		
+		<div id="fullpage">
+			<section class="section intro">
+				<div class="inner-page center">
+					<img src="images/logo_face.png" width="120" />
+					<div class="small-padding"></div>
+					<h1 class="light white shadow">Introducing Treats</h1>
+					<div style="padding-bottom:1em;"></div>
+					<h3 class="white shadow">The app that lets you share free things with your friends</h3>
+					<div class="small-padding"></div>
+					<button id="video" type="button" class="button big-button rounded green-bg no-border white bold uppercase no-margins loose">Watch the Video</button>
+					<!-- <button type="button" class="button big-button rounded white semi-transparent-bg white-border uppercase no-margins loose hover-white-bg hover-green all-transition">Download</button> -->
+				</div><!-- Inner Page -->
+				
+				<a class="icon-angle-down white arrow"></a>
+				
+				<video autoplay loop muted id="commercial" class="bgvid">
+					<source src="video/edit.mp4" type="video/mp4">
+				</video>
+				
+				<div id="full-commercial" class="bgvid none">
+					<video controls>
+						<source src="video/Commercial.mov">
+					</video>
+					<a id="close-video" class="icon-cancel white"></a>
+				</div>
+			</section><!-- Section 1: Intro -->
+			
+			<section class="section sign-up" style="background:url(images/blurry-city.jpg) 50% 50% no-repeat;">
+				<div class="inner-page">
+					<div class="table">
+						<div class="table-cell table-col iphone-cell">
+							<img class="iphone block" src="images/iphone_2.png" />		
+						</div>
+						<div class="table-cell spacer"></div>
+						<div class="table-cell table-col">
+							<img class="icon" src="images/icon_1.png" />
+							<h2 class="light white">Get the app and we'll mail your Treats Visa Prepaid Card.</h2>
+						</div><!-- Text -->
+					</div><!-- Table -->
+				</div><!-- Inner Page -->
+			</section><!-- Section 2: Sign Up -->
+			
+			<section class="section use-card" style="background:url(images/burrito.jpg) 50% 50% no-repeat;">
+					<div class="inner-page">
+						<div class="col one-half last-row">&nbsp;</div>
+						<div class="col one-half last last-row">
+							<img class="icon" src="images/icon_2.png" />
+							<h2 class="light white shadow">Use like your normal debit card to buy everyday stuff, like lunch with a friend.</h2>
+						</div>
+					</div><!-- Inner Page -->
+					<img class="card-swipe" src="images/cardFront_vert.png" width="220" />
+					<img class="card-reader" src="images/card-reader.png" />
+			</section><!-- Section 3: Use Card -->
+			
+			<section class="send-treats section" style="background:url(images/using-device.jpg) 50% 50% no-repeat;">
+				<div class="inner-page">
+					<div class="table">
+						<div class="table-cell table-col"></div>
+						<div class="table-cell spacer"></div>
+						<div class="table-cell table-col">
+							<img class="icon" src="images/icon_3.png" />
+							<h2 class="light white">Every 7 purchases, create a Treat to give to a friend.</h2>
+						</div><!-- Text -->
+					</div><!-- Table -->
+				</div><!-- Inner Page -->
+			</section><!-- Section 4: Send Treats -->
+			
+			<section class="section open-treat" style="background:url(images/76117.jpg) 50% 50% no-repeat;">
+				<div class="inner-page">
+					<div class="table">
+						<div class="table-cell table-col">
+							<img class="iphone none" src="images/iphone_2.png" />	
+						</div>
+						<div class="table-cell spacer"></div>
+						<div class="table-cell table-col">
+							<img class="icon" src="images/icon_4.png" />
+							<h2 class="light white shadow">When you open a Treat, it may pay for your purchase.</h2>
+						</div><!-- Text -->
+					</div><!-- Table -->
+				</div><!-- Inner Page -->
+			</section><!-- Section 5: Open Treat -->
+			
+			<section class="section news-feed light-grey-bg" style="background:url(images/blurry-city.jpg) 50% 50% no-repeat;">
+				<div class="inner-page">
+				  <div class="table">
+						<div class="table-cell table-col">
+							<img class="icon" src="images/icon_treats.png" />
+							<h2 class="light white">Check out friends' Treats in the Newsfeed. Boost Treats you like to help them win.</h2>
+						</div>
+						<div class="table-cell spacer"></div>
+						<div class="table-cell table-col">
+							<video autoplay loop muted id="news-vid">
+								<source src="video/NewsFeed.mp4">
+							</video>
+						</div><!-- Text -->
+					</div><!-- Table -->
+				</div><!-- Inner Page -->
+			</section><!-- Section 6: News feed -->
+			
+			<section class="section send-money" style="background:url(images/462927.jpg) 50% 50% no-repeat;">
+				<div class="inner-page">
+				  <div class="table">
+						<div class="table-cell table-col">
+							<img class="icon" src="images/icon_money.png" />
+							<h2 class="light white shadow">Pay any Treats member instantly. No fees.</h2>
+						</div>
+						<div class="table-cell spacer"></div>
+						<div class="table-cell table-col">
+							<video id="send-money-vid" autoplay muted>
+								<source src="video/p2p--2.mp4">
+							</video>
+						</div><!-- Text -->
+					</div><!-- Table -->
+				</div><!-- Inner Page -->
+			</section><!-- Section 7: Send Money -->
+			
+			<section class="section purchase-history" style="background:url(images/484486.jpg) 50% 50% no-repeat;">
+				<div class="inner-page">
+					<div class="table">
+						<div class="table-cell table-col">
+							<img class="icon" src="images/icon_feed.png" />
+							<h2 class="light white">Your app keeps track of every card swipe and payment to a friend</h2>		
+						</div>
+						<div class="table-cell spacer"></div>
+						<div class="table-cell table-col">
+							<video autoplay loop muted id="history">
+								<source src="video/payments_list.mp4" type="video/mp4">
+							</video>	
+						</div><!-- Text -->
+					</div><!-- Table -->
+				</div><!-- Inner Page -->
+			</section><!-- Section 8: Purchase history -->
+			
+			<section class="section green-bg">
+				<div class="inner-page center">
+					<img src="images/logo_face.png" width="120" />
+					
+					<div class="small-padding"></div>
+					<h1 class="light white no-margins">Ready to treat it forward?</h1>
+					<div class="small-padding"></div>
+					
+					<a href="https://itunes.apple.com/app/clinkle/id458523629" target="_blank"><img src="images/applestore.png" height="52" /></a> &nbsp;
+					<a href="https://play.google.com/store/apps/details?id=com.clinkle" target="_blank"><img src="images/googleplaystore.png" height="52" /></a>
+				</div><!-- Inner Page -->
+				<div id="security">
+					<img src="images/security.png" />
+				</div>
+			</section><!-- Section 10: Download -->
+		</div><!-- full page -->
+	</body>
+</html>
